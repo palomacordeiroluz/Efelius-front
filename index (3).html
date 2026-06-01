@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AFELIUS — Energia do Espaço para a Terra</title>
+  <link rel="stylesheet" href="/css/style (1).css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Exo+2:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-links">
+    <a href="#problema">Problemas</a>
+    <a href="#tecnologia">Tecnologia</a>
+    <a href="#objetivos">Objetivos</a>
+    <a href="#publico">Público</a>
+    <a href="#beneficios">Benefícios</a>
+    <a href="#aplicacao">Aplicação</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div id="hero">
+  <div class="hero-bg">
+
+      <img src="assets/hero-bg.gif" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;"/>
+    
+  </div>
+  <div class="hero-bg-placeholder"></div>
+  <div class="hero-content">
+    <div class="hero-logo-block">
+      <div class="hero-logo">AFELIUS</div>
+      <div class="hero-tagline">ENERGIA DO ESPAÇO PARA A TERRA</div>
+    </div>
+    <div class="hero-text-block">
+      <h1 class="hero-title">Energia solar orbital<br>transmitida via laser</h1>
+      <p class="hero-desc">
+        Captação de energia solar no espaço 24h por dia e transmitimos para a Terra, sem
+        nuvens, sem noite, <strong>SEM LIMITE.</strong>
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- SEÇÃO 1 — PROBLEMA -->
+<div id="problema">
+  <div class="inner">
+    <div class="section-label">Quais são os problemas?</div>
+    <div class="problema-grid">
+      <div class="problema-card">1 bilhão de pessoas sem energia elétrica</div>
+      <div class="problema-card">Fontes renováveis dependem do clima</div>
+      <div class="problema-card">Painéis solares param à noite</div>
+      <div class="problema-card">Infraestrutura cara em regiões remotas</div>
+    </div>
+  </div>
+</div>
+
+<!-- SEÇÃO 2 — TECNOLOGIA -->
+<div id="tecnologia">
+  <div class="tecnologia-bg">
+    <!--
+      ADICIONE SEU GIF AQUI:-->
+      <img src="assets/tech-bg.gif" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;"/>
+  
+  </div>
+  <div class="inner">
+    <div class="section-label">Tecnologia</div>
+    <div class="section-sub">Como o sistema funciona em escala real, do satélite até a estação receptora na Terra?</div>
+
+    <div class="fluxo-label">FLUXO DO SISTEMA — ESCALA REAL</div>
+    <div class="fluxo-grid">
+      <div class="fluxo-card">
+        <p>Satélite</p>
+        <span>Painéis orbitam o Sol 24h</span>
+      </div>
+      <span class="fluxo-arrow">→</span>
+      <div class="fluxo-card">
+        <p>Geração</p>
+        <span>Eletricidade → emissor laser</span>
+      </div>
+      <span class="fluxo-arrow">→</span>
+      <div class="fluxo-card">
+        <p>Array de laser</p>
+        <span>Feixe ramificado em múltiplos raios</span>
+      </div>
+      <span class="fluxo-arrow">→</span>
+      <div class="fluxo-card">
+        <p>Ponto focal</p>
+        <span>Todos os feixes convergem</span>
+      </div>
+      <span class="fluxo-arrow">→</span>
+      <div class="fluxo-card">
+        <p>Conversão</p>
+        <span>Célula fotovoltaica transforma luz em eletricidade</span>
+      </div>
+    </div>
+
+    <div class="ramificar-box">
+      <h4>Por que ramificar o laser?</h4>
+      <p>
+        Um único feixe de alta potência seria perigoso — poderia danificar aeronaves, satélites ou até
+        causar incêndios. Ao dividir em múltiplos feixes de baixa potência individual que só se concentram
+        no ponto receptor, nenhum feixe isolado carrega energia suficiente para causar dano. A potência
+        total só existe no ponto focal, onde está a célula receptora.
+      </p>
+    </div>
+
+    <div class="tech-cards">
+      <div class="tech-card">
+        <p>Arduino / ESP32</p>
+        <span>Controle e orientação dos painéis</span>
+      </div>
+      <div class="tech-card">
+        <p>Painel solar + LDR</p>
+        <span>Captação e medição de energia</span>
+      </div>
+      <div class="tech-card">
+        <p>Laser + rádio backup</p>
+        <span>Transmissão híbrida e resiliente</span>
+      </div>
+      <div class="tech-card">
+        <p>Dashboard web</p>
+        <span>Monitoramento em tempo real</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- DIVISOR COM LOGO -->
+<div class="logo-divider">
+  <div class="big-logo">AFELIUS</div>
+</div>
+
+<!-- SEÇÃO 3 — OBJETIVOS -->
+<div id="objetivos">
+  <div class="objetivos-bg">
+  
+      <img src="assets/terra.gif" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;"/>
+    
+  </div>
+  <div class="inner">
+    <div class="section-label">Objetivos</div>
+    <div class="objetivos-list">
+      <div class="objetivo-item">Simular captação de energia solar em órbita com hardware real</div>
+      <div class="objetivo-item">Desenvolver algoritmo de apontamento automático via sinal de referência</div>
+      <div class="objetivo-item">Implementar alternância automática laser/rádio em caso de falha</div>
+      <div class="objetivo-item">Monitorar eficiência da transmissão em tempo real via dashboard</div>
+    </div>
+  </div>
+</div>
+
+<!-- SEÇÃO 4 — PÚBLICO-ALVO -->
+<div id="publico">
+  <div class="inner">
+    <div class="section-label">Público-alvo →</div>
+    <div class="publico-grid">
+      <div class="publico-card">
+        <h4>Regiões remotas</h4>
+        <p>Comunidades sem acesso à rede elétrica</p>
+      </div>
+      <div class="publico-card">
+        <h4>Missões espaciais</h4>
+        <p>Bases lunares e missões de longa duração</p>
+      </div>
+      <div class="publico-card">
+        <h4>Indústria</h4>
+        <p>Mineração e operações em zonas sem infraestrutura</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SEÇÃO 5 — BENEFÍCIOS -->
+<div id="beneficios">
+  <div class="beneficios-bg">
+
+      <img src="assets/sunback.gif" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;"/>
+    
+  </div>
+  <div class="inner">
+    <div class="section-label">Benefícios</div>
+    <div class="beneficios-grid">
+      <div class="beneficio-card">
+        <h4>Energia 24h ininterrupta</h4>
+        <p>Sem depender de clima ou ciclo dia/noite</p>
+      </div>
+      <div class="beneficio-card">
+        <h4>Zero emissão de carbono</h4>
+        <p>Fonte 100% renovável e limpa</p>
+      </div>
+      <div class="beneficio-card">
+        <h4>Resiliente a falhas</h4>
+        <p>Alternância automática laser/rádio</p>
+      </div>
+      <div class="beneficio-card">
+        <h4>Escalável globalmente</h4>
+        <p>Atende qualquer ponto do planeta</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SEÇÃO 6 — APLICAÇÃO -->
+<div id="aplicacao">
+  <div class="inner">
+    <div class="section-label">Aplicação no dia a dia</div>
+    <div class="aplicacao-list">
+      <div class="aplicacao-item">
+        <div class="aplicacao-num">1</div>
+        <div class="aplicacao-text">
+          <h4>Energia para comunidades isoladas</h4>
+          <p>Aldeias remotas, comunidades ribeirinhas e zonas rurais recebem energia sem necessidade de cabos ou torres.</p>
+        </div>
+      </div>
+      <div class="aplicacao-item">
+        <div class="aplicacao-num">2</div>
+        <div class="aplicacao-text">
+          <h4>Suporte a missões espaciais</h4>
+          <p>Bases na Lua ou em Marte recebem energia transmitida de satélites orbitais, eliminando a necessidade de combustível pesado.</p>
+        </div>
+      </div>
+      <div class="aplicacao-item">
+        <div class="aplicacao-num">3</div>
+        <div class="aplicacao-text">
+          <h4>Resposta a desastres</h4>
+          <p>Em enchentes ou terremotos onde a rede elétrica colapsa, o sistema mantém hospitais e centros de resgate operando.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">AFELIUS</div>
+  <div class="footer-copy">© 2026 — Projeto Acadêmico — Engenharia de Software</div>
+  <div class="footer-team">
+    Ana Beatriz &nbsp; <span>RM:</span><br>
+    Paloma &nbsp; <span>RM:</span><br>
+    Yasmin &nbsp; <span>RM:</span>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
